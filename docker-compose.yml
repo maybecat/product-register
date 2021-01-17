@@ -12,7 +12,7 @@ services:
       - '.:/product-register'
     environment:
       #- 'DATABASE_PASSWORD=postgres'
-      DATABASE_PASSWORD=postgres
+      - DATABASE_PASSWORD=postgres
     tty: true
     stdin_open: true
     depends_on:
